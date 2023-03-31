@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
+
+
+:root {
+    --cor-primaria: #F7F7F2;
+    --cor-secundaria: #260C1A;
+    --cor-terciaria: #F05D23;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-tercearia: 'Archivo Narrow'
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; Utilizado anteriormente para pagina utilizar 100% do "viewport height", com mais elementos ja não é mais necessário. */ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria)
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-tercearia);
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--cor-secundaria);
+    text-decoration: none;
+
+
+}
+.titulo-destaque {
+    color: var(--cor-terciaria)
+}
+
+.apresentacao {
+    padding: 5% 20%;
+    display: flex;
+    align-items: center;
+    
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.50rem;
+    font-family: var(--font-tercearia);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    text-align: justify;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-tercearia);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.apresentacao__links__navegacao {
+    /*background-color: #5D7540; Versão anterior do botão com a cor de fundo preenchida*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    width: 378px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family:  var(--font-secundaria);
+    padding: 10px 0px;
+    color:var(--cor-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.apresentacao__links__contatos {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__contatos__links {
+    display: flex;
+    align-items:center;
+    gap: 16px;
+    text-align: center;
+    width: 378px;
+    font-size: 1rem;
+    font-family:  var(--font-secundaria);
+    color:var(--cor-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentacao__links__img {
+    width: 24px;
+    height: 24px;
+    left: 116px;
+    top: 44px;
+}
+
+.apresentacao__links__img2 {
+    width: 30px;
+    height: 30px;
+    left: 116px;
+    top: 44px;
+}
+
+.apresentacao__conteudo__estampa {
+    display: grid;
+    gap: 50px;
+       
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 420px;
+    height: 450px;
+    border: 1px solid var(--cor-secundaria);
+    font-size: 12px;
+    font-family: var(--font-secundaria);
+    padding: 10% 5% 5% 10%;
+    
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 420px;
+    height: 450px;
+    border: 1px solid var(--cor-secundaria);
+    font-size: 12px;
+    font-family: var(--font-secundaria);
+    padding: 10% 5% 5% 10%;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 420px;
+    height: 450px;
+    border: 1px solid var(--cor-secundaria);
+    font-size: 12px;
+    font-family: var(--font-secundaria);
+    padding: 10% 5% 5% 10%;
+    
+}
+
+
+.apresentacao__conteudo__estampa__TE{
+    width: 399px;
+    height: 382px;
+    padding: 10px;
+}
+
+.apresentacao__conteudo__estampa__TE2{
+    width: 399px;
+    height: 709px;
+    padding: 10px;
+}
+
+
+.apresentacao__conteuco__estampa__link {
+    display: flex;
+    justify-content: right;
+    padding-right: 2.9%;
+    text-decoration: none;
+}
+
+.theend__conteudo {
+    padding: 5% 0% 0% 30%; 
+    display: flex;
+    align-items: center;
+    gap: 62px;
+}
+.theend__conteudo__grid {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.theend__conteudo__grid__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-secundaria);
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.apresentacao__conteudo__estampa__descrisao {
+    font-family: var(--font-secundaria);
+    text-align: justify;
+
+}
+
+.grid__estampas {
+    display: grid;
+    gap: 2px;
+    padding: auto;    
+}
+
+
+.apresentacao__conteudo__estampa__maior1 {
+    width: 540px;
+    height: 573px;
+  
+}
+
+.apresentacao__conteudo__estampa__maior2 {
+    width: 540px;
+    height: 675px;
+    
+}
+
+.apresentacao__conteudo__estampa__maior1c {
+    width: 540px;
+    height: 540px;
+    
+}
+
+.apresentacao__conteudo__estampa__maior2c {
+    width: 540px;
+    height: 540px; 
+}
+
+.apresentacao__conteudo__estampa__maior2d {
+    width: 540px;
+    height: 800px; 
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+.apresentacao__conteuco__estampa__link:hover {
+    color: var(--cor-terciaria);
+
+}
+.apresentacao__imagem {
+    width: 30%;
+}
+
+.rodape {
+    padding: 24px;
+    background-color:var(--cor-terciaria);
+    color:var(--cor-secundaria);
+    text-align: center;
+    font-family:  var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 8%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+        
+    }
+
+    .apresentacao__conteudo__estampa {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+           
+    }
+    
+    .item1 {
+        width: 420px;
+        height: 450px;
+        border: 1px solid var(--cor-secundaria);
+        font-size: 12px;
+        font-family: var(--font-secundaria);
+        padding: 10% 5% 5% 10%;
+        
+    }
+    
+    .item2 {
+        width: 420px;
+        height: 450px;
+        border: 1px solid var(--cor-secundaria);
+        font-size: 12px;
+        font-family: var(--font-secundaria);
+        padding: 10% 5% 5% 10%;
+    }
+    
+    .item3 {  
+        width: 420px;
+        height: 450px;
+        border: 1px solid var(--cor-secundaria);
+        font-size: 12px;
+        font-family: var(--font-secundaria);
+        padding: 10% 5% 5% 10%;
+        
+    }
+}
